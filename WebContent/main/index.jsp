@@ -64,15 +64,111 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	          namespace: "callbacks",
 	          pager: true,
 	        });
-	      });		
+	      });	
+	    
+	    
+	    $(document).ready(function(){
+	    	var t = new Date();
+	    	var yy = t.getFullYear();
+	    	var mm = t.getMonth()+1;
+	    	var dd = t.getDate();
+	    	$('.datepicker').each(function(){
+	    		$(this).datepicker({
+	    			//startDate: "10/16/2015"
+	    			format: 'yyyy/mm/dd',
+	    			startDate: yy + "/" + mm + "/" + dd,
+	    			language: 'kr'
+	    		})
+	    	});
+	    });	    
 	
 	</script>
 	
+	<!----font-Awesome----->
+	<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+	<!----font-Awesome----->	
+	
+	<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>	
+
+    <script type="text/javascript">
+	    $(document).ready(function () {
+	        $('#horizontalTab').easyResponsiveTabs({
+	            type: 'default', //Types: default, vertical, accordion           
+	            width: 'auto', //auto or any width like 600px
+	            fit: true   // 100% fit in a container
+	        });
+	    });
+	</script>	
+	
+	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+	
+	<script src="js/bootstrap-datepicker.min.js"></script>
+	<script src="js/bootstrap-datepicker.kr.min.js"></script>	
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	
+	<style>
+		@media screen and (min-width: 800px) {
+			li.dropdown:hover > ul.dropdown-menu{     
+				display: block;     
+				margin: 0;  
+			}
+		}
+	</style> 	
+
 </head>
 <body>
-	인덱스 .jsp
+
+	<div class="header">
+	  <div class="logo">
+		<a href="index.jsp"><img src="images/logo.jpg" alt=""/></a>
+	  </div>
+	  
+	  
+	</div>		
+	
+	
+	</div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
